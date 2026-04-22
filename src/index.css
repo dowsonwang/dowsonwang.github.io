@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --app-bg-0: #f2f9ff;
+  --app-bg-1: #e9f4ff;
+  --brand-500: #08b8ff;
+  --brand-600: #0596ff;
+  --ink-900: #0b1220;
+  --ink-600: #52607a;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(1200px 900px at 15% 0%, rgba(8, 184, 255, 0.12), transparent 55%),
+    radial-gradient(900px 700px at 80% 20%, rgba(16, 185, 129, 0.10), transparent 55%),
+    linear-gradient(180deg, var(--app-bg-0), var(--app-bg-1));
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
